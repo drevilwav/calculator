@@ -9,36 +9,36 @@
 </head>
 <body>
   <div class="calc">
-    <div class="display">343243242+432</div>
+    <div class="display"></div>
     <div class="section">
-      <button class="operators">AC</button>
-      <button class="operators">BS</button>
-      <button class="operators">%</button>
-      <button class="operators">/</button>
+      <button class="operators" onclick="cleanDisplay()">AC</button>
+      <button class="operators" onclick="backspace()">BS</button>
+      <button class="operators" onclick="pressOperator('%')">%</button>
+      <button class="operators" onclick="pressOperator('/')">/</button>
     </div>
     <div class="section">
-      <button class="numbers">7</button>
-      <button class="numbers">8</button>
-      <button class="numbers">9</button>
-      <button class="operators">X</button>
+      <button class="numbers" onclick="pressNumber('7')">7</button>
+      <button class="numbers" onclick="pressNumber('8')">8</button>
+      <button class="numbers" onclick="pressNumber('9')">9</button>
+      <button class="operators" onclick="pressOperator('*')">X</button>
     </div>
     <div class="section">
-      <button class="numbers">4</button>
-      <button class="numbers">5</button>
-      <button class="numbers">6</button>
-      <button class="operators">–</button>
+      <button class="numbers" onclick="pressNumber('4')">4</button>
+      <button class="numbers" onclick="pressNumber('5')">5</button>
+      <button class="numbers" onclick="pressNumber('6')">6</button>
+      <button class="operators" onclick="pressOperator('-')">–</button>
     </div>
     <div class="section">
-      <button class="numbers">1</button>
-      <button class="numbers">2</button>
-      <button class="numbers">3</button>
-      <button class="operators">+</button>
+      <button class="numbers" onclick="pressNumber('1')">1</button>
+      <button class="numbers" onclick="pressNumber('2')">2</button>
+      <button class="numbers" onclick="pressNumber('3')">3</button>
+      <button class="operators" onclick="pressOperator('+')">+</button>
     </div>
     <div class="section">
-      <button class="operators">+/–</button>
-      <button class="numbers">0</button>
-      <button class="numbers">,</button>
-      <button class="operators">=</button>
+      <button class="operators" onclick="pressOperator('minus')">+/–</button>
+      <button class="numbers" onclick="pressNumber('0')">0</button>
+      <button class="numbers" onclick="pressNumber(',')">,</button>
+      <button class="operators" onclick="calculate()">=</button>
     </div>
   </div>  
 </body>
