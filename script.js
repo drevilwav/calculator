@@ -2,6 +2,7 @@ let currentInput = "";
 let previousInput = "";
 
 function pressNumber(num) {
+  if (num == "." && currentInput.includes(".")) return;
   currentInput += num;
   updateDisplay();
 }
@@ -75,4 +76,14 @@ function cleanDisplay() {
   previousInput = "";
   operation = null;
   updateDisplay();
+}
+
+function minus() {
+  if (currentInput.substring(0, 1) == "-") {
+    currentInput = currentInput.substring(1, currentInput.length)
+    updateDisplay();
+  } else {
+    currentInput = "-" + currentInput;
+    updateDisplay();
+  }
 }
